@@ -7,6 +7,15 @@
     <title>Pre Calculus Quiz</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/precalc/precalc.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
 </head>
 <body>
     <div class="container">
@@ -20,8 +29,34 @@
                         <div id="progressBarFull"></div>
                     </div>
                 </div>
+                <div class="hud-item">
+                    <p class="hud-prefix">
+                        Score
+                    </p>
+                    <h1 class="hud-main-text" id="score">
+                        0
+                    </h1>
+                </div>
+            </div>
+            <h1 id="question">Evaluate $\sin(1)$</h1>
+            <div class="choice-container">
+                <p class="choice-prefix">A</p>
+                <p class="choice-text" data-number="1">Choice</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">B</p>
+                <p class="choice-text" data-number="2">Choice</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">C</p>
+                <p class="choice-text" data-number="3">Choice</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">D</p>
+                <p class="choice-text" data-number="4">Choice</p>
             </div>
         </div>
     </div>
+    <script src="/precalc/precalc.js"></script>
 </body>
 </html>
